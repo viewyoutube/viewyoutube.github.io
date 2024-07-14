@@ -10,14 +10,6 @@ function onYouTubeIframeAPIReady() {
     // No changes needed here
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Set default grid number to 10
-    document.getElementById('grid-number').value = 10;
-
-    document.getElementById('play-button').addEventListener('click', handlePlayButton);
-    document.getElementById('mute-button').addEventListener('click', handleMuteButton);
-});
-
 function handlePlayButton() {
     const youtubeUrl = document.getElementById('youtube-url').value;
     const gridNumber = parseInt(document.getElementById('grid-number').value, 10);
