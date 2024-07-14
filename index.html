@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ad ad-top">Top Ad Placeholder</div>
+    <div class="ad ad-left">Left Ad Placeholder</div>
+    <div class="ad ad-right">Right Ad Placeholder</div>
+    <div class="ad ad-bottom">Bottom Ad Placeholder</div>
+    <div class="content">
+        <div class="input-container">
+            <input type="text" id="youtube-url" placeholder="Enter YouTube URL">
+            <input type="number" id="grid-number" placeholder="Number of Grids" min="1" max="100">
+            <button id="play-button">Play Video</button>
+            <button id="mute-button" disabled>Mute All</button>
+        </div>
+        <div class="video-grid-container">
+            <div class="video-grid" id="video-grid">
+                <!-- Video elements will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>

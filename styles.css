@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.ad {
+    position: fixed;
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.ad-top {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+.ad-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+.ad-left {
+    top: 100px;
+    bottom: 100px;
+    left: 0;
+    width: 100px;
+}
+
+.ad-right {
+    top: 100px;
+    bottom: 100px;
+    right: 0;
+    width: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(100% - 200px); /* Adjust for left and right ads */
+    height: calc(100% - 200px); /* Adjust for top and bottom ads */
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 25px; /* Adjust for top ad padding */
+    padding-bottom: 5px; /* Adjust for bottom ad padding */
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.video-grid-container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
